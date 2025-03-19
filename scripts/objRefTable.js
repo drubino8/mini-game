@@ -10,6 +10,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Keyboard,
 		C3.Plugins.Text,
 		C3.Plugins.video,
+		C3.Plugins.Button,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Behaviors.Bullet.Acts.SetAngleOfMotion,
 		C3.Plugins.TiledBg.Cnds.CompareX,
@@ -42,7 +43,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.CompareX,
 		C3.Plugins.Sprite.Acts.SetX,
 		C3.Plugins.Sprite.Exps.X,
-		C3.Behaviors.Platform.Cnds.OnLand
+		C3.Behaviors.Platform.Cnds.OnLand,
+		C3.Plugins.Button.Cnds.OnClicked,
+		C3.Plugins.System.Acts.GoToLayout
 	];
 };
 self.C3_JsPropNameTable = [
@@ -56,6 +59,12 @@ self.C3_JsPropNameTable = [
 	{Keyboard: 0},
 	{DistanceDisplay: 0},
 	{Video: 0},
+	{TiledBackground2: 0},
+	{Sprite: 0},
+	{Sprite2: 0},
+	{Text: 0},
+	{Sprite3: 0},
+	{StartButton: 0},
 	{TotalDistance: 0},
 	{CurrentDistance: 0},
 	{NextBlock: 0}
@@ -68,5 +77,11 @@ self.InstanceType = {
 	Touch: class extends self.IInstance {},
 	Keyboard: class extends self.IInstance {},
 	DistanceDisplay: class extends self.ITextInstance {},
-	Video: class extends self.IWorldInstance {}
+	Video: class extends self.IWorldInstance {},
+	TiledBackground2: class extends self.ITiledBackgroundInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	Text: class extends self.ITextInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	StartButton: class extends self.IButtonInstance {}
 }
