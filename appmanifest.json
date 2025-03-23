@@ -1,6 +1,6 @@
 {
-	"name": "Endless runner template",
-	"short_name": "Endless runner template",
+	"name": "No Mana Runner",
+	"short_name": "No Mana Runner",
 	"description": "",
 	"start_url": "index.html",
 	"display": "fullscreen",
